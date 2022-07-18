@@ -5,8 +5,7 @@ FROM node:alpine as builder
 WORKDIR /frontend
 
 # copy the json file first
-COPY ./package.json /frontend
-
+COPY ./package.json .
 # install npm dependencies
 RUN npm install
 
